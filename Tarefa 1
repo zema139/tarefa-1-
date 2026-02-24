@@ -1,0 +1,92 @@
+EX1
+#include <stdio.h>
+int main() {
+    float salarioMinimo, salarioBruto, quantidade;
+
+    printf("Digite o valor do salario minimo: ");
+    scanf("%f", &salarioMinimo);
+
+    printf("Digite o valor do salario bruto: ");
+    scanf("%f", &salarioBruto);
+
+    quantidade = salarioBruto / salarioMinimo;
+#include <stdio.h>
+    printf("A pessoa recebe %.2f salarios minimos\n", quantidade);
+
+    return 0;
+}
+EX2
+#include <stdio.h>
+int main() {
+
+    float Horas, Minutos;
+
+    printf("Digite o numero de horas: ");
+    scanf("%f", &Horas);
+
+    Minutos = Horas * 60;
+    printf("horas em minutos %.2f\n", Minutos);
+}
+EX3
+#include <stdio.h>
+int main() {
+    int n1, n2, n3;
+    printf("digite o valor da nota 1:\n ");
+    scanf("%d", &n1);
+    printf("digite o valor da nota 2:\n ");
+    scanf("%d", &n2);
+    printf("digite o valor da nota 3:\n ");
+    scanf("%d", &n3);
+    int media = (n1 + n2 + n3) / 3;
+    printf("a media das notas e: %d\n", media);
+EX4
+#include <stdio.h>
+int main() {
+    int larg, alt, Area;
+    printf("Digite a largura do retângulo: ");
+    scanf("%d", &larg);
+    printf("Digite a altura do retângulo: ");
+    scanf("%d", &alt);
+    Area = larg * alt;
+    printf("A área do retângulo é: %d\n", Area);
+EX5
+#include <stdio.h>
+
+int main() {
+    float sm;   
+    float vd;   
+    float vr;   
+    float cc;   
+    int qc;     
+
+    printf("Digite o salario minimo: ");
+    scanf("%f", &sm);
+
+    printf("Digite o valor do dolar: ");
+    scanf("%f", &vd);
+
+    vr = 10000000 * vd;
+    cc = 150 * sm;   
+    qc = vr / cc;        
+
+    printf("\nValor total em reais: %.2f\n", vr);
+    printf("Custo de cada casa: %.2f\n", cc);
+    printf("Quantidade de casas: %d\n", qc);
+
+    return 0;
+}
+EX6
+#include <stdio.h>
+
+int main() {
+
+    int num;
+    printf("Digite um número inteiro: ");
+    scanf("%d", &num);
+
+    if(num % 5 == 0) {
+        printf("O número é múltiplo de 5.\n");
+    } else {
+        printf("O número não é múltiplo de 5.\n");
+    }
+
